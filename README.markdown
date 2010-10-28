@@ -8,3 +8,8 @@ core
 * index.php placed in new "html" directory.
 * "core" directory renamed to "ci-core"
 * "application" directory renamed to "ci-app" (I change this again for each individual app).
+
+application/config/config.php
+-----------------------------
+
+* base_url set to http://$_SERVER['SERVER_NAME']/
