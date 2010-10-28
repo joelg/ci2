@@ -16,6 +16,7 @@ application/config/config.php
 * base_url set to http://$_SERVER['SERVER_NAME']/
 * index_page set to empty string (always use mod_rewrite)
 * ? added to permitted_uri_chars
+* Changed uri_protocol to PATH_INFO
 
 
 application/config/constants.php
