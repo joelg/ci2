@@ -36,6 +36,29 @@ define('FOPEN_READ_WRITE_CREATE',				'a+b');
 define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
+/*
+|--------------------------------------------------------------------------
+| IS_AJAX
+|--------------------------------------------------------------------------
+|
+| This is used to determine whether the request came via AJAX
+|
+*/
+
+define('IS_AJAX', isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest');
+
+/*
+|--------------------------------------------------------------------------
+| LIVE
+|--------------------------------------------------------------------------
+|
+| LIVE is set to true for the LIVE environment
+|
+*/
+
+if(strpos($_SERVER['SERVER_NAME'], 'local.') === false) define('LIVE', true);
+else define('LIVE', false);
+
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */
