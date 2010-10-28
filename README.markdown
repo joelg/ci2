@@ -16,5 +16,10 @@ application/config/config.php
 * base_url set to http://$_SERVER['SERVER_NAME']/
 * index_page set to empty string (always use mod_rewrite)
 * ? added to permitted_uri_chars
+
+
+application/config/constants.php
+--------------------------------
+
 * Added IS_AJAX constant for requests which came via AJAX
 * Added LIVE constant to differentiate dev and live environments
