@@ -28,14 +28,6 @@ function include_js_templates($js_templates) {
 	}
 }
 
-
-function output_title($title, $image = false)
-{
-	if($image && $title != "Buffer") $title = str_replace('Buffer', '<a href="/"><img src="/images/logo-new.png" alt="buffer" /></a>', $title);
-	elseif($image) $title = str_replace('Buffer', '<a href="/"><img src="/images/logo-small.png" alt="buffer" /></a>', $title);
-	echo $title;
-}
-
 function add_notice($message)
 {
 	$ci =& get_instance();
