@@ -31,7 +31,7 @@ application/core
 
 * Added MY_Controller.php
 	* Support for "notices" and "global errors"
-	* Support for $this->_header() and $this->_footer() functions which use views/common/header.php and views/common/footer.php
+	* Support for $this->\_header() and $this->\_footer() functions which use views/common/header.php and views/common/footer.php
 	* A _json function which outputs JSON with the correct Content-Type header.
 	
 	
