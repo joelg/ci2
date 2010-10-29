@@ -50,7 +50,7 @@ $autoload['libraries'] = array('View', 'session');
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array();
+$autoload['helper'] = array('url', 'html');
 
 
 /*

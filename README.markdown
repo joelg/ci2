@@ -42,3 +42,15 @@ application/libraries
 
 * Added View.php library which allows multiple calls to set variables in views
 	* Syntax changes from $this->load->view() to $this->view->load() and $this->view->set()
+	
+application/helpers
+-------------------
+
+* include_specific_js()
+	* By adding a variable to the view $js_files which is an array, call this function in the header view to output js_files which are in /js/specific.
+* include_js_templates()
+	* By adding a variable to the view $js_templates which is an array, call this function in the header view to output js_templates which are in /js/templates.
+* add_notice() and show_notices()
+	* Add notices to be shown on the next page load
+* add_global_error() and show_global_errors()
+	* Add errors to be shown on the next page load
