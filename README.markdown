@@ -24,3 +24,19 @@ application/config/constants.php
 
 * Added IS_AJAX constant for requests which came via AJAX
 * Added LIVE constant to differentiate dev and live environments
+
+
+application/core
+----------------
+
+* Added MY_Controller.php
+	* Support for "notices" and "global errors"
+	* Support for $this->_header() and $this->_footer() functions which use views/common/header.php and views/common/footer.php
+	* A _json function which outputs JSON with the correct Content-Type header.
+	
+	
+application/libraries
+---------------------
+
+* Added View.php library which allows multiple calls to set variables in views
+	* Syntax changes from $this->load->view() to $this->view->load() and $this->view->set()
