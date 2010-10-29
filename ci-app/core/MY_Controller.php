@@ -18,9 +18,8 @@ class MY_Controller extends Controller  {
 		if(!LIVE && !IS_AJAX) $this->output->enable_profiler(true);
     }
 
-	function _header($app_interface=false)
-	{	
-		$this->view->set('app_interface', $app_interface);
+	function _header()
+	{
 		$title = $this->view->get('title');
 		if(empty($title)) $this->view->set('title', 'Your title');
 		$this->view->load('common/header');
